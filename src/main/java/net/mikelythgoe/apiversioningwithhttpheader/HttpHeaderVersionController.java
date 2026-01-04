@@ -11,9 +11,16 @@ public class HttpHeaderVersionController {
         return "Hello Version One";
     }
 
-    @GetMapping(value = "/hello", version = "2.0")
-    public String helloV2() {
-        return "Hello Version Two";
+
+    @GetMapping(value = "/hello", version = "9.9")
+    public String helloV99() {
+        return "Hello Version 9.9";
     }
+
+// The methods below fails - the app won't even start - the version must be major.minor<.patch> numbers
+//    @GetMapping(value = "/hello", version = "x.x")
+//    public String helloVXx() {
+//        return "Hello Version x.x";
+//    }
 
 }
