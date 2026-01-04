@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ApiVersioningWithHttpHeaderApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ApiVersioningWithHttpHeaderApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ApiVersioningWithHttpHeaderApplication.class, args);
+    }
 
 }
