@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HttpHeaderVersionController {
 
-    @GetMapping(value = "/hello", version = "1.0")
+    @GetMapping(value = "/hello", version = "1")
     public String helloV1() {
         return "Hello Version One";
     }
