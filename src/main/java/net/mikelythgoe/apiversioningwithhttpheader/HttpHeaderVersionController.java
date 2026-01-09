@@ -38,7 +38,13 @@ public class HttpHeaderVersionController {
         return "{\"message\":\"Hello Version 9.9\"}";
     }
 
-// The method below fails - the app won't even start!!!
+    // http://localhost:8080/hello http header X-API-Version=9.9.9 (you can use 9.9.9, or 9.9.9.0, but you can't use 9.9.1, 9.9.9.1, etc.)
+    @GetMapping(value = "/hello", version = "9.9.9")
+    public String helloV9point9point9() {
+        return "{\"message\":\"Hello Version 9.9.9\"}";
+    }
+
+    // The method below fails - the app won't even start!!!
 // The version MUST be in major<.minor<.patch>> format where all parts, if used, are integers
 //    @GetMapping(value = "/hello", version = "x.x")
 //    public String helloVXx() {
