@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HttpHeaderVersionController {
-    // For versioning, version must be major.minor.patch format
+    // For versioning, the version must be major.minor.patch format
 
     // http://localhost:8080/hello http header X-API-Version=1.0 (you can use 1.0, 1, or 1.0.0, but you can't use 1.1, 1.0.1, etc.)
     @GetMapping(value = "/hello", version = "1")
@@ -39,7 +39,7 @@ public class HttpHeaderVersionController {
     }
 
 // The method below fails - the app won't even start!!!
-// The version MUST be major<.minor<.patch>> format where all parts, if used, are integers
+// The version MUST be in major<.minor<.patch>> format where all parts, if used, are integers
 //    @GetMapping(value = "/hello", version = "x.x")
 //    public String helloVXx() {
 //        return "Hello Version x.x";
