@@ -12,7 +12,7 @@ public class HttpHeaderVersionController {
     public String helloV1() {
         return """
                 {
-                "message":"Hello Version 1"
+                    "message":"Hello Version 1"
                 }
                 """;
     }
@@ -23,7 +23,7 @@ public class HttpHeaderVersionController {
     public String helloV2point0() {
         return """
                 {
-                "message":"Hello Version 2"
+                    "message":"Hello Version 2"
                 }
                 """;
     }
@@ -33,7 +33,7 @@ public class HttpHeaderVersionController {
     public String helloV3point5() {
         return """
                 {
-                "message":"Hello Version 3.5"
+                    "message":"Hello Version 3.5"
                 }
                 """;
     }
@@ -43,7 +43,7 @@ public class HttpHeaderVersionController {
     public String helloV9() {
         return """
                 {
-                "message":"Hello Version 9"
+                    "message":"Hello Version 9"
                 }
                 """;
     }
@@ -53,7 +53,7 @@ public class HttpHeaderVersionController {
     public String helloV9point9() {
         return """
                 {
-                "message":"Hello Version 9.9"
+                    "message":"Hello Version 9.9"
                 }
                 """;
     }
@@ -63,7 +63,7 @@ public class HttpHeaderVersionController {
     public String helloV9point9point9() {
         return """
                 {
-                "message":"Hello Version 9.9.9"
+                    "message":"Hello Version 9.9.9"
                 }
                 """;
     }
