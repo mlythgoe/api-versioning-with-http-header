@@ -10,11 +10,10 @@ public class WebMvcConfig implements WebMvcConfigurer {
     private static final String API_VERSION_HEADER = "X-API-Version";
     private static final String[] SUPPORTED_VERSIONS = {"1.0", "2.0", "3.5", "9"};
 
+    @Override
     public void configureApiVersioning(ApiVersionConfigurer configurer) {
-
-        // In this project, we set 'Version Required' to true,
-        // meaning the version MUST be passed, and there is no default, so the default version has been removed
-        // from the configuration.
+        // We use the built-in resolver for the header. 
+        // By default, Spring 6.2 uses SemanticVersionParser, so no 'setStrategy' is needed.
         configurer
                 .addSupportedVersions(SUPPORTED_VERSIONS)
                 .setVersionRequired(true)
