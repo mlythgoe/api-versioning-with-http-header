@@ -12,7 +12,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void configureApiVersioning(ApiVersionConfigurer configurer) {
-        // We use the built-in resolver for the header. 
+        // We use the built-in resolver for the header.
         // By default, Spring 6.2 uses SemanticVersionParser, so no 'setStrategy' is needed.
         configurer
                 .addSupportedVersions(SUPPORTED_VERSIONS)
